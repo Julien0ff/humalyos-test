@@ -67,14 +67,14 @@ const Team = () => {
           name: "Sacha Majcherczak",
           role: "Vice Président, Coordinateur unité psychologique & Responsable Zone NORD",
           email: "sacha.majcherczak@humalyos.fr",
-          image: "/src/assets/Sacha.jpg",
+          image: "/assets/Sacha.jpg",
           bio: "Expertise psychologique et coordination de la zone Nord."
         },
         {
           name: "Wahid Habbar",
           role: "Vice président, Responsable régional Normandie",
           email: "wahid.habbar@humalyos.fr",
-          image: "/src/assets/Wahid.jpg",
+          image: "/assets/Wahid.jpg",
           bio: "Développement et coordination de la région Normandie."
         }
       ]
@@ -87,14 +87,14 @@ const Team = () => {
           role: "Secrétaire général, Assistant/conseiller juridique, Responsable Zone EST & Responsable groupes de paroles",
           email: "romain.rodriguez@humalyos.fr",
           linkedin: "https://www.linkedin.com/in/romain-rodriguez-102015380/",
-          image: "/src/assets/Romain.jpg",
+          image: "/assets/Romain.jpg",
           bio: "Gestion administrative et coordination des groupes de parole."
         },
         {
           name: "Kilian Didelet",
           role: "Trésorier, Responsable départemental de la Loire",
           email: "kilian.didelet@humalyos.fr",
-          image: "/src/assets/Kilian.jpg",
+          image: "/assets/Kilian.jpg",
           bio: "Gestion financière et déploiement dans la Loire."
         }
       ]
@@ -106,14 +106,14 @@ const Team = () => {
           name: "Julien Vrignaud",
           role: "Responsable Unité Harcèlement & Préventions, Responsable Grand Est",
           email: "julien.vrignaud@solreca-group.fr",
-          image: "/src/assets/Julien.jpg",
+          image: "/assets/Julien.jpg",
           bio: "Lutte contre le harcèlement et prévention en région Grand Est."
         },
         {
           name: "Gabin Hugerot",
           role: "Responsable Unité Harcèlement & Préventions",
           email: "gabin.hugerot@humalyos.fr",
-          image: "/src/assets/Gabin.jpg",
+          image: "/assets/Gabin.jpg",
           bio: "Expertise en dispositifs de prévention du harcèlement."
         },
         {
@@ -121,7 +121,7 @@ const Team = () => {
           role: "Responsable Unité Cyber, Responsable Zone SUD & PACA",
           email: "christophe.plane@humalyos.fr",
           linkedin: "https://www.linkedin.com/in/christophe-plane-a571942a4/",
-          image: "/src/assets/Chris.jpg",
+          image: "/assets/Chris.jpg",
           bio: "Protection numérique et coordination de la zone Sud."
         },
         {
@@ -139,7 +139,7 @@ const Team = () => {
           name: "Dylan Plaire Hatie",
           role: "Responsable de la zone EST",
           email: "dylan.plaire-hatie@humalyos.fr",
-          image: "/src/assets/Dylan.jpg",
+          image: "/assets/Dylan.jpg",
           bio: "Coordination opérationnelle de la zone Est."
         }
       ]
