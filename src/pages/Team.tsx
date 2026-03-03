@@ -60,7 +60,7 @@ const Team = () => {
           role: "Président de l'antenne Nationale",
           email: "pierrick.cornuat@humalyos.fr",
           linkedin: "https://www.linkedin.com/in/pierrick-cornuat-43081131a/",
-          image: "https://ui-avatars.com/api/?name=Pierrick+Cornuat&background=002B5B&color=fff&size=512",
+          image: "/assets/Pierrick.jpg",
           bio: "Direction stratégique et représentation de l'antenne nationale."
         },
         {
@@ -127,7 +127,7 @@ const Team = () => {
         {
           name: "Jean Alain Adli",
           role: "Responsable ECHO (Evacuation, Coordination, Hébergement, Organisation), Dept Haut Rhin",
-          image: "https://ui-avatars.com/api/?name=Jean+Alain+Adli&background=F2FF00&color=002B5B&size=512",
+          image: "/assets/Jean.jpg",
           bio: "Coordination des secours d'urgence et hébergement."
         }
       ]
