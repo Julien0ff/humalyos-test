@@ -49,9 +49,9 @@ const Navbar = () => {
             ))}
             <div className="h-8 w-[2px] bg-slate-200 mx-4"></div>
             <Link
-              to="/login"
+              to="/portal"
               className={`flex items-center px-6 py-2.5 rounded-full text-sm font-black uppercase transition-all shadow-lg hover:shadow-secondary/20 ${
-                isActive('/login')
+                isActive('/portal')
                 ? 'bg-primary text-white'
                 : 'bg-secondary text-white hover:bg-primary'
               }`}
