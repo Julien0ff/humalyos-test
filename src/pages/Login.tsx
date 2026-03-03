@@ -65,7 +65,7 @@ const Login = () => {
             <LogIn className="w-10 h-10 text-white" />
           </div>
           <h2 className="text-4xl font-black text-primary uppercase tracking-tighter">Portail Interne</h2>
-          <p className="text-slate-500 mt-2 font-medium">Connexion via les identifiants <span className="text-secondary font-bold">eBrigade</span></p>
+          <p className="text-slate-500 mt-2 font-medium">Le portail interne arrive bientôt. <span className="text-secondary font-bold">Contactez-nous</span> pour plus d'informations.</p>
         </div>
 
         <form onSubmit={handleSubmit} className="space-y-5">
