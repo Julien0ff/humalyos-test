@@ -10,7 +10,7 @@ const Footer = () => {
           {/* Brand & Mission */}
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center mb-6">
-              <img src="src/assets/logo.png" alt="Humalyos Logo" className="h-16 w-16 mr-4" />
+              <img src="/assets/logo.png" alt="Humalyos Logo" className="h-16 w-16 mr-4" />
               <div className="flex flex-col">
                 <h2 className="text-3xl font-black text-white tracking-tighter leading-none">HUMALYOS</h2>
                 <span className="text-[10px] font-bold text-accent tracking-[0.3em] uppercase mt-1">Antenne Nationale</span>

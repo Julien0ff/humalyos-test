@@ -13,7 +13,6 @@ const Navbar = () => {
     { name: 'L\'Équipe', path: '/equipe' },
     { name: 'Nous Rejoindre', path: '/rejoindre' },
     { name: 'Faire un don', path: '/dons' },
-    { name: 'Mentions Légales', path: '/mentions-legales' },
   ];
 
   const isActive = (path: string) => location.pathname === path;
@@ -25,7 +24,7 @@ const Navbar = () => {
         <div className="flex justify-between h-20">
           <div className="flex items-center">
             <Link to="/" className="flex-shrink-0 flex items-center group">
-              <img src="src/assets/logo.png" alt="Humalyos Logo" className="h-14 w-14 mr-3 transition-transform group-hover:scale-110" />
+              <img src="/assets/logo.png" alt="Humalyos Logo" className="h-14 w-14 mr-3 transition-transform group-hover:scale-110" />
               <div className="flex flex-col">
                 <span className="text-2xl font-black text-primary leading-none tracking-tighter">HUMALYOS</span>
                 <span className="text-[10px] font-bold text-secondary tracking-[0.2em] uppercase">Antenne Nationale</span>
