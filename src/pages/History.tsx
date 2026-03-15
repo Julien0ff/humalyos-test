@@ -22,7 +22,7 @@ const History = () => {
       title: "Naissance Officielle",
       description: "Validation de la création de l'association sous le nom de 'Groupement Ma Belle France'.",
       icon: <Award className="w-6 h-6" />,
-      color: "bg-secondary"
+      color: "bg-accent"
     },
     {
       date: "26 Janvier 2025",
@@ -36,14 +36,14 @@ const History = () => {
       title: "Accord Logistique",
       description: "Signature d'un accord avec la fédération pour la gestion mutualisée de la logistique du groupement.",
       icon: <Shield className="w-6 h-6" />,
-      color: "bg-blue-600"
+      color: "bg-sky"
     },
     {
       date: "Juin 2025",
       title: "Déploiement des Unités",
       description: "Toutes les unités du groupement sont créées et entrent en phase de développement actif.",
       icon: <Users className="w-6 h-6" />,
-      color: "bg-secondary"
+      color: "bg-accent"
     },
     {
       date: "30 Août 2025",
@@ -65,17 +65,17 @@ const History = () => {
     <div className="bg-background min-h-screen">
       {/* Header */}
       <section className="bg-primary pt-32 pb-20 text-white relative overflow-hidden">
-        <div className="absolute top-0 left-0 w-full h-1.5 bg-secondary"></div>
+        <div className="absolute top-0 left-0 w-full h-1.5 bg-accent"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             className="max-w-3xl"
           >
-            <h1 className="text-5xl md:text-7xl font-black mb-6 uppercase tracking-tighter">
+            <h1 className="text-5xl md:text-7xl font-bold mb-6 uppercase tracking-tighter font-poppins text-white">
               NOTRE <span className="text-accent">HISTOIRE</span>
             </h1>
-            <p className="text-xl text-slate-300 font-medium leading-relaxed border-l-4 border-secondary pl-6">
+            <p className="text-xl text-slate-300 font-medium leading-relaxed border-l-4 border-accent pl-6">
               De l'idée originelle à l'Antenne Nationale Humalyos : découvrez les étapes clés de notre engagement.
             </p>
           </motion.div>
@@ -99,7 +99,7 @@ const History = () => {
                   className={`relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group`}
                 >
                   {/* Dot */}
-                  <div className="absolute left-4 md:left-1/2 w-8 h-8 rounded-full border-4 border-white bg-secondary shadow-lg z-10 -translate-x-1/2 transition-transform group-hover:scale-125"></div>
+                  <div className="absolute left-4 md:left-1/2 w-8 h-8 rounded-full border-4 border-white bg-accent shadow-lg z-10 -translate-x-1/2 transition-transform group-hover:scale-125"></div>
 
                   {/* Content */}
                   <div className="ml-12 md:ml-0 md:w-1/2 md:px-12">
@@ -108,9 +108,9 @@ const History = () => {
                         <div className={`p-3 rounded-xl ${event.color} text-white shadow-sm`}>
                           {event.icon}
                         </div>
-                        <span className="text-secondary font-black uppercase tracking-widest text-sm">{event.date}</span>
+                        <span className="text-accent font-bold uppercase tracking-widest text-sm font-poppins">{event.date}</span>
                       </div>
-                      <h3 className="text-2xl font-black text-primary mb-3 uppercase tracking-tight">{event.title}</h3>
+                      <h3 className="text-2xl font-bold text-primary mb-3 uppercase tracking-tight font-poppins">{event.title}</h3>
                       <p className="text-slate-500 font-medium leading-relaxed">{event.description}</p>
                     </div>
                   </div>

@@ -1,6 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-arial text-secondary antialiased bg-background;
+    margin: 0;
+    min-height: 100vh;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-poppins;
+  }
+
+  #root {
+    width: 100%;
+  }
+}
 
 @layer utilities {
   .animate-marquee {
@@ -15,16 +33,3 @@
   100% { transform: translate(-100%, 0); }
 }
 
-:root {
-  font-family: 'Inter', system-ui, -apple-system, sans-serif;
-}
-
-body {
-  @apply bg-background text-secondary antialiased;
-  margin: 0;
-  min-height: 100vh;
-}
-
-#root {
-  width: 100%;
-}

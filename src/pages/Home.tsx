@@ -14,17 +14,17 @@ const Home = () => {
     {
       title: "Défense des droits",
       desc: "Protection des personnes et défense des droits fondamentaux.",
-      icon: <Shield className="w-7 h-7 text-secondary" />,
+      icon: <Shield className="w-7 h-7 text-accent" />,
     },
     {
       title: "Aide Sociale",
       desc: "Accompagnement psychologique et soutien aux plus démunis.",
-      icon: <Heart className="w-7 h-7 text-secondary" />,
+      icon: <Heart className="w-7 h-7 text-accent" />,
     },
     {
       title: "Sécurité Numérique",
       desc: "Prévention et intervention face aux menaces cyber.",
-      icon: <Cpu className="w-7 h-7 text-secondary" />,
+      icon: <Cpu className="w-7 h-7 text-accent" />,
     },
   ];
 
@@ -54,11 +54,11 @@ const Home = () => {
             className="max-w-xl"
           >
             <div className="flex items-center space-x-2 mb-6">
-              <span className="h-[2px] w-12 bg-secondary"></span>
-              <span className="text-secondary font-black uppercase tracking-[0.3em] text-sm">Protection & Solidarité</span>
+              <span className="h-[2px] w-12 bg-accent"></span>
+              <span className="text-accent font-medium uppercase tracking-[0.3em] text-sm font-poppins">Protection & Solidarité</span>
             </div>
             
-            <h1 className="text-5xl md:text-7xl font-black text-white leading-[0.9] mb-8 uppercase tracking-tighter">
+            <h1 className="text-5xl md:text-7xl font-bold text-white leading-[0.9] mb-8 uppercase tracking-tighter font-poppins">
               L'URGENCE <br />
               AU SERVICE DE <br />
               <span className="text-accent">L'HUMAIN.</span>
@@ -72,7 +72,7 @@ const Home = () => {
             <div className="flex flex-col sm:flex-row gap-4">
               <Link 
                 to="/missions" 
-                className="inline-flex items-center justify-center bg-secondary text-white px-8 py-4 rounded-full font-black uppercase tracking-wider hover:bg-white hover:text-primary transition-all shadow-xl"
+                className="inline-flex items-center justify-center bg-accent text-white px-8 py-4 rounded-full font-bold uppercase tracking-wider hover:bg-white hover:text-primary transition-all shadow-xl"
               >
                 NOS MISSIONS
                 <ArrowRight className="ml-2 w-5 h-5" />
@@ -130,10 +130,10 @@ const Home = () => {
                 initial={{ opacity: 0, scale: 0.9 }}
                 className="flex flex-col items-center p-8 bg-background rounded-2xl text-center"
               >
-                <div className="p-3 bg-white rounded-full shadow-sm text-primary mb-4">
+                <div className="p-3 bg-white rounded-full shadow-sm text-accent mb-4">
                   {stat.icon}
                 </div>
-                <div className="text-4xl font-bold text-secondary mb-2">{stat.value}</div>
+                <div className="text-4xl font-bold text-primary mb-2">{stat.value}</div>
                 <div className="text-gray-600 font-medium">{stat.label}</div>
               </motion.div>
             ))}
@@ -145,8 +145,8 @@ const Home = () => {
       <section className="py-20 bg-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-secondary mb-4">Nos Domaines d'Intervention</h2>
-            <div className="w-20 h-1 bg-primary mx-auto mb-6"></div>
+            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">Nos Domaines d'Intervention</h2>
+            <div className="w-20 h-1 bg-accent mx-auto mb-6"></div>
             <p className="text-gray-600 max-w-2xl mx-auto">
               Nous intervenons sur plusieurs fronts pour assurer une protection globale et un accompagnement de qualité.
             </p>
@@ -158,9 +158,9 @@ const Home = () => {
                 key={index} 
                 className="relative bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-xl hover:-translate-y-1 transition-all group"
               >
-                <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-secondary via-accent to-secondary/30 rounded-t-2xl"></div>
+                <div className="absolute top-0 left-0 w-full h-1 bg-accent rounded-t-2xl"></div>
                 <div className="flex items-start gap-5">
-                  <div className="w-12 h-12 rounded-xl bg-secondary/10 text-secondary flex items-center justify-center group-hover:bg-secondary/15 transition-colors">
+                  <div className="w-12 h-12 rounded-xl bg-accent/10 text-accent flex items-center justify-center group-hover:bg-accent/15 transition-colors">
                     {mission.icon}
                   </div>
                   <div>
@@ -172,7 +172,7 @@ const Home = () => {
                     </p>
                     <Link 
                       to="/missions" 
-                      className="inline-flex items-center text-sm font-black text-secondary uppercase tracking-widest hover:text-primary transition-colors"
+                      className="inline-flex items-center text-sm font-bold text-accent uppercase tracking-widest hover:text-primary transition-colors"
                     >
                       En savoir plus
                       <ArrowRight className="ml-2 w-4 h-4" />
@@ -186,17 +186,17 @@ const Home = () => {
       </section>
 
       {/* Call to Action */}
-      <section className="py-20 bg-secondary text-white">
+      <section className="py-20 bg-primary text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-5xl font-bold mb-8">Rejoignez l'aventure Humalyos</h2>
           <p className="text-xl mb-10 opacity-90 max-w-2xl mx-auto">
             Que vous souhaitiez devenir bénévole, partenaire ou nous soutenir financièrement, chaque action compte.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-6">
-            <button className="bg-primary text-white px-10 py-4 rounded-full font-bold text-lg hover:shadow-xl transition-all">
+            <Link to="/rejoindre" className="bg-white text-primary px-10 py-4 rounded-full font-bold text-lg hover:shadow-xl transition-all">
               Devenir Bénévole
-            </button>
-            <Link to="/dons" className="bg-accent text-primary px-10 py-4 rounded-full font-bold text-lg hover:shadow-xl transition-all">
+            </Link>
+            <Link to="/dons" className="bg-accent text-white px-10 py-4 rounded-full font-bold text-lg hover:shadow-xl transition-all">
               Faire un Don
             </Link>
           </div>

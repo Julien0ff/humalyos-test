@@ -74,17 +74,17 @@ const Missions = () => {
     <div className="bg-background min-h-screen">
       {/* Header */}
       <section className="bg-primary pt-32 pb-20 text-white relative overflow-hidden">
-        <div className="absolute top-0 left-0 w-full h-1.5 bg-secondary"></div>
+        <div className="absolute top-0 left-0 w-full h-1.5 bg-accent"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             className="max-w-3xl"
           >
-            <h1 className="text-5xl md:text-7xl font-black mb-6 uppercase tracking-tighter">
+            <h1 className="text-5xl md:text-7xl font-bold mb-6 uppercase tracking-tighter font-poppins">
               NOS <span className="text-accent">MISSIONS</span>
             </h1>
-            <p className="text-xl text-slate-300 font-medium leading-relaxed border-l-4 border-secondary pl-6">
+            <p className="text-xl text-slate-300 font-medium leading-relaxed border-l-4 border-accent pl-6">
               Une expertise pluridisciplinaire au service de la protection des droits, 
               de l'aide sociale et de la sécurité numérique.
             </p>
@@ -106,16 +106,16 @@ const Missions = () => {
                 className="bg-white rounded-2xl p-10 shadow-sm border border-slate-100 hover:shadow-xl transition-all"
               >
                 <div className="flex flex-col md:flex-row gap-8">
-                  <div className="text-secondary bg-slate-50 p-6 rounded-2xl h-fit">
+                  <div className="text-accent bg-slate-50 p-6 rounded-2xl h-fit">
                     {mission.icon}
                   </div>
                   <div>
-                    <h3 className="text-2xl font-black text-primary mb-4 uppercase tracking-tight">{mission.title}</h3>
+                    <h3 className="text-2xl font-bold text-primary mb-4 uppercase tracking-tight font-poppins">{mission.title}</h3>
                     <p className="text-slate-500 mb-8 font-medium leading-relaxed">{mission.description}</p>
                     <ul className="space-y-3">
                       {mission.details.map((detail, idx) => (
                         <li key={idx} className="flex items-center text-sm font-bold text-slate-400 uppercase tracking-wide">
-                          <CheckCircle2 className="w-4 h-4 mr-3 text-secondary" />
+                          <CheckCircle2 className="w-4 h-4 mr-3 text-accent" />
                           {detail}
                         </li>
                       ))}
@@ -129,10 +129,10 @@ const Missions = () => {
       </section>
 
       {/* Contact Section */}
-      <section className="py-16 bg-secondary text-white text-center">
+      <section className="py-16 bg-primary text-white text-center">
         <div className="max-w-7xl mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-6">Vous souhaitez en savoir plus sur nos actions ?</h2>
-          <button className="bg-primary text-white px-8 py-3 rounded-full font-bold hover:shadow-lg transition-all">
+          <h2 className="text-3xl font-bold mb-6 font-poppins">Vous souhaitez en savoir plus sur nos actions ?</h2>
+          <button className="bg-accent text-white px-8 py-3 rounded-full font-bold hover:bg-white hover:text-primary transition-all font-poppins">
             Nous contacter
           </button>
         </div>

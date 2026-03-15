@@ -56,18 +56,18 @@ const Join = () => {
 
   return (
     <div>
-      <section className="bg-primary pt-32 pb-20 text-white relative overflow-hidden">
-        <div className="absolute top-0 left-0 w-full h-1.5 bg-secondary"></div>
+      <section className="bg-primary pt-32 pb-20 text-white relative overflow-hidden font-poppins">
+        <div className="absolute top-0 left-0 w-full h-1.5 bg-accent"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             className="max-w-3xl"
           >
-            <h1 className="text-5xl md:text-7xl font-black mb-6 uppercase tracking-tighter">
+            <h1 className="text-5xl md:text-7xl font-bold mb-6 uppercase tracking-tighter">
               NOUS <span className="text-accent">REJOINDRE</span>
             </h1>
-            <p className="text-xl text-slate-300 font-medium leading-relaxed border-l-4 border-secondary pl-6">
+            <p className="text-xl text-slate-300 font-medium leading-relaxed border-l-4 border-accent pl-6">
               Devenez bénévole ou candidat au sein de HUMALYOS. Remplissez le formulaire ci-dessous —
               nous reviendrons vers vous rapidement.
             </p>
@@ -91,14 +91,14 @@ const Join = () => {
             <div className="lg:col-span-1">
               <div className="bg-slate-50 p-8 rounded-3xl border border-slate-200">
                 <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center mb-4">
-                  <UserPlus className="w-6 h-6 text-secondary" />
+                  <UserPlus className="w-6 h-6 text-accent" />
                 </div>
-                <h2 className="text-xl font-black text-primary uppercase tracking-tight mb-3">Profil recherché</h2>
-                <p className="text-slate-600 leading-relaxed">
+                <h2 className="text-xl font-bold text-primary uppercase tracking-tight mb-3 font-poppins">Profil recherché</h2>
+                <p className="text-slate-600 leading-relaxed font-arial">
                   Tous profils motivés, sensibles aux enjeux citoyens et prêts à s’engager.
                   Aucun prérequis technique n’est obligatoire — la formation est assurée.
                 </p>
-                <div className="mt-6 text-[10px] font-black text-secondary uppercase tracking-widest">Engagement • Respect • Solidarité</div>
+                <div className="mt-6 text-[10px] font-bold text-accent uppercase tracking-widest font-poppins">Engagement • Respect • Solidarité</div>
               </div>
             </div>
 
@@ -111,52 +111,52 @@ const Join = () => {
                       name="firstName"
                       value={formData.firstName}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-secondary"
+                      className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-accent/20 focus:border-accent"
                       placeholder="Jean"
                       required
                     />
                   </div>
                   <div>
-                    <label className="block text-xs font-black text-slate-500 uppercase tracking-widest mb-2">Nom</label>
+                    <label className="block text-xs font-bold text-slate-500 uppercase tracking-widest mb-2 font-poppins">Nom</label>
                     <input
                       name="lastName"
                       value={formData.lastName}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-secondary"
+                      className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-accent/20 focus:border-accent"
                       placeholder="Dupont"
                       required
                     />
                   </div>
                   <div>
-                    <label className="block text-xs font-black text-slate-500 uppercase tracking-widest mb-2">Email</label>
+                    <label className="block text-xs font-bold text-slate-500 uppercase tracking-widest mb-2 font-poppins">Email</label>
                     <input
                       type="email"
                       name="email"
                       value={formData.email}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-secondary"
+                      className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-accent/20 focus:border-accent"
                       placeholder="jean.dupont@email.com"
                       required
                     />
                   </div>
                   <div>
-                    <label className="block text-xs font-black text-slate-500 uppercase tracking-widest mb-2">Téléphone</label>
+                    <label className="block text-xs font-bold text-slate-500 uppercase tracking-widest mb-2 font-poppins">Téléphone</label>
                     <input
                       name="phone"
                       value={formData.phone}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-secondary"
+                      className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-accent/20 focus:border-accent"
                       placeholder="+33 6 12 34 56 78"
                       required
                     />
                   </div>
                   <div className="md:col-span-2">
-                    <label className="block text-xs font-black text-slate-500 uppercase tracking-widest mb-2">Ce que vous aimeriez faire dans l'association</label>
+                    <label className="block text-xs font-bold text-slate-500 uppercase tracking-widest mb-2 font-poppins">Ce que vous aimeriez faire dans l'association</label>
                     <select
                       name="interest"
                       value={formData.interest}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-secondary"
+                      className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-accent/20 focus:border-accent"
                       required
                     >
                       <option value="">Choisir…</option>
@@ -176,12 +176,12 @@ const Join = () => {
                 </div>
 
                 <div className="mt-6">
-                  <label className="block text-xs font-black text-slate-500 uppercase tracking-widest mb-2">Motivation</label>
+                  <label className="block text-xs font-bold text-slate-500 uppercase tracking-widest mb-2 font-poppins">Motivation</label>
                   <textarea
                     name="motivation"
                     value={formData.motivation}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-secondary"
+                    className="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-accent/20 focus:border-accent"
                     rows={5}
                     placeholder="Quelques lignes sur votre motivation et vos centres d’intérêt…"
                     required
@@ -206,7 +206,7 @@ const Join = () => {
                 <div className="mt-8 flex items-center">
                   <button
                     type="submit"
-                    className="inline-flex items-center bg-secondary text-white px-8 py-4 rounded-full font-black uppercase tracking-wider hover:bg-primary transition-all shadow-xl disabled:opacity-60"
+                    className="inline-flex items-center bg-accent text-white px-8 py-4 rounded-full font-bold uppercase tracking-wider hover:bg-primary transition-all shadow-xl disabled:opacity-60 font-poppins"
                     disabled={submitStatus === 'loading'}
                   >
                     <Send className="w-5 h-5 mr-2" />
@@ -216,7 +216,7 @@ const Join = () => {
                     <span className="ml-4 text-sm text-slate-500">Envoi en cours…</span>
                   )}
                   {submitStatus === 'success' && (
-                    <span className="ml-4 text-sm font-bold text-secondary">Merci, votre demande a été envoyée.</span>
+                    <span className="ml-4 text-sm font-bold text-accent">Merci, votre demande a été envoyée.</span>
                   )}
                   {submitStatus === 'error' && (
                     <span className="ml-4 text-sm font-bold text-red-500">Une erreur est survenue. Réessayez.</span>

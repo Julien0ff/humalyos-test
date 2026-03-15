@@ -167,17 +167,17 @@ const Team = () => {
     <div className="bg-background min-h-screen">
       {/* Header */}
       <section className="bg-primary pt-32 pb-20 text-white relative overflow-hidden">
-        <div className="absolute top-0 left-0 w-full h-1.5 bg-secondary"></div>
+        <div className="absolute top-0 left-0 w-full h-1.5 bg-accent"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             className="max-w-3xl"
           >
-            <h1 className="text-5xl md:text-7xl font-black mb-6 uppercase tracking-tighter">
+            <h1 className="text-5xl md:text-7xl font-bold mb-6 uppercase tracking-tighter font-poppins text-white">
               L'ÉQUIPE <span className="text-accent">HUMALYOS</span>
             </h1>
-            <p className="text-xl text-slate-300 font-medium leading-relaxed border-l-4 border-secondary pl-6">
+            <p className="text-xl text-slate-300 font-medium leading-relaxed border-l-4 border-accent pl-6">
               Une organisation structurée au service de l'intérêt général.
             </p>
           </motion.div>
@@ -189,9 +189,9 @@ const Team = () => {
         <section key={sIndex} className="py-16">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex items-center gap-6 mb-12">
-              <h2 className="text-3xl font-black text-primary uppercase tracking-tight">{section.title}</h2>
+              <h2 className="text-3xl font-black text-primary uppercase tracking-tight font-poppins">{section.title}</h2>
               <div className="h-1 flex-grow bg-slate-100 rounded-full">
-                <div className="h-full w-24 bg-secondary rounded-full"></div>
+                <div className="h-full w-24 bg-accent rounded-full"></div>
               </div>
             </div>
 
@@ -214,12 +214,12 @@ const Team = () => {
                     <div className="absolute inset-0 bg-gradient-to-t from-primary/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-6">
                       <div className="flex space-x-3">
                         {member.linkedin && (
-                          <a href={member.linkedin} target="_blank" rel="noopener noreferrer" className="p-2.5 bg-white rounded-full text-primary hover:bg-secondary hover:text-white transition-all shadow-lg">
+                          <a href={member.linkedin} target="_blank" rel="noopener noreferrer" className="p-2.5 bg-white rounded-full text-primary hover:bg-accent hover:text-white transition-all shadow-lg">
                             <Linkedin className="w-5 h-5" />
                           </a>
                         )}
                         {member.email && (
-                          <a href={`mailto:${member.email}`} className="p-2.5 bg-white rounded-full text-primary hover:bg-secondary hover:text-white transition-all shadow-lg">
+                          <a href={`mailto:${member.email}`} className="p-2.5 bg-white rounded-full text-primary hover:bg-accent hover:text-white transition-all shadow-lg">
                             <Mail className="w-5 h-5" />
                           </a>
                         )}
@@ -228,8 +228,8 @@ const Team = () => {
                   </div>
                   <div className="p-8 flex-grow flex flex-col">
                     <div className="mb-4">
-                      <h3 className="text-xl font-black text-primary uppercase tracking-tight leading-tight">{member.name}</h3>
-                      <p className="text-secondary font-bold text-xs uppercase tracking-widest mt-1 min-h-[2rem] leading-relaxed">
+                      <h3 className="text-xl font-bold text-primary uppercase tracking-tight leading-tight font-poppins">{member.name}</h3>
+                      <p className="text-accent font-bold text-xs uppercase tracking-widest mt-1 min-h-[2rem] leading-relaxed font-poppins">
                         {member.role}
                       </p>
                     </div>
@@ -258,17 +258,17 @@ const Team = () => {
             viewport={{ once: true }}
             className="max-w-4xl mx-auto"
           >
-            <h2 className="text-4xl font-black text-primary uppercase tracking-tighter mb-4">Bureau Exécutif</h2>
+            <h2 className="text-4xl font-bold text-primary uppercase tracking-tighter mb-4 font-poppins">Bureau Exécutif</h2>
             <p className="text-lg text-slate-500 font-medium mb-12">Rejoignez notre équipe dirigeante. Postes à promouvoir :</p>
             
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
               {recruitmentPositions.map((position, index) => (
-                <a href="/rejoindre" key={index} className="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 hover:border-secondary transition-colors group block">
-                  <div className="w-12 h-12 bg-slate-50 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:bg-secondary/10 transition-colors">
-                    <UserPlus className="w-6 h-6 text-slate-400 group-hover:text-secondary transition-colors" />
+                <a href="/rejoindre" key={index} className="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 hover:border-accent transition-colors group block">
+                  <div className="w-12 h-12 bg-slate-50 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:bg-accent/10 transition-colors">
+                    <UserPlus className="w-6 h-6 text-slate-400 group-hover:text-accent transition-colors" />
                   </div>
-                  <h4 className="font-bold text-primary uppercase text-sm tracking-wide">{position}</h4>
-                  <div className="mt-4 inline-block text-[10px] font-black text-secondary uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-opacity">
+                  <h4 className="font-bold text-primary uppercase text-sm tracking-wide font-poppins">{position}</h4>
+                  <div className="mt-4 inline-block text-[10px] font-bold text-accent uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-opacity">
                     Postuler →
                   </div>
                 </a>
@@ -278,7 +278,7 @@ const Team = () => {
             <div className="mt-16">
               <a 
                 href="/rejoindre"
-                className="inline-flex items-center bg-primary text-white px-10 py-4 rounded-full font-black uppercase tracking-widest hover:bg-secondary transition-all shadow-xl hover:shadow-secondary/20"
+                className="inline-flex items-center bg-primary text-white px-10 py-4 rounded-full font-bold uppercase tracking-widest hover:bg-accent transition-all shadow-xl hover:shadow-accent/20 font-poppins"
               >
                 Nous rejoindre
               </a>
@@ -304,12 +304,12 @@ const Team = () => {
               exit={{ opacity: 0, scale: 0.9, y: 20 }}
               className="relative bg-white rounded-3xl shadow-2xl w-full max-w-xl overflow-hidden"
             >
-              <div className="absolute top-0 left-0 w-full h-1.5 bg-secondary"></div>
+              <div className="absolute top-0 left-0 w-full h-1.5 bg-accent"></div>
               
               <div className="p-8 md:p-12">
                 <div className="flex justify-between items-start mb-8">
                   <div>
-                    <h2 className="text-3xl font-black text-primary uppercase tracking-tighter">Devenir membre</h2>
+                    <h2 className="text-3xl font-bold text-primary uppercase tracking-tighter font-poppins">Devenir membre</h2>
                     <p className="text-slate-500 font-medium mt-1">Rejoignez l'Antenne Nationale Humalyos</p>
                   </div>
                   <button 
@@ -342,54 +342,54 @@ const Team = () => {
                           required
                           value={formData.firstName}
                           onChange={(e) => setFormData({...formData, firstName: e.target.value})}
-                          className="w-full px-4 py-3 rounded-xl border border-slate-100 bg-slate-50 focus:bg-white focus:ring-2 focus:ring-secondary/20 focus:border-secondary transition-all outline-none"
+                          className="w-full px-4 py-3 rounded-xl border border-slate-100 bg-slate-50 focus:bg-white focus:ring-2 focus:ring-accent/20 focus:border-accent transition-all outline-none"
                           placeholder="Jean"
                         />
                       </div>
                       <div>
-                        <label className="block text-[10px] font-black text-primary uppercase tracking-widest mb-1.5 ml-1">Nom</label>
+                        <label className="block text-[10px] font-bold text-primary uppercase tracking-widest mb-1.5 ml-1 font-poppins">Nom</label>
                         <input 
                           type="text" 
                           required
                           value={formData.lastName}
                           onChange={(e) => setFormData({...formData, lastName: e.target.value})}
-                          className="w-full px-4 py-3 rounded-xl border border-slate-100 bg-slate-50 focus:bg-white focus:ring-2 focus:ring-secondary/20 focus:border-secondary transition-all outline-none"
+                          className="w-full px-4 py-3 rounded-xl border border-slate-100 bg-slate-50 focus:bg-white focus:ring-2 focus:ring-accent/20 focus:border-accent transition-all outline-none"
                           placeholder="Dupont"
                         />
                       </div>
                     </div>
-
+ 
                     <div>
-                      <label className="block text-[10px] font-black text-primary uppercase tracking-widest mb-1.5 ml-1">Email</label>
+                      <label className="block text-[10px] font-bold text-primary uppercase tracking-widest mb-1.5 ml-1 font-poppins">Email</label>
                       <input 
                         type="email" 
                         required
                         value={formData.email}
                         onChange={(e) => setFormData({...formData, email: e.target.value})}
-                        className="w-full px-4 py-3 rounded-xl border border-slate-100 bg-slate-50 focus:bg-white focus:ring-2 focus:ring-secondary/20 focus:border-secondary transition-all outline-none"
+                        className="w-full px-4 py-3 rounded-xl border border-slate-100 bg-slate-50 focus:bg-white focus:ring-2 focus:ring-accent/20 focus:border-accent transition-all outline-none"
                         placeholder="jean.dupont@exemple.com"
                       />
                     </div>
-
+ 
                     <div>
-                      <label className="block text-[10px] font-black text-primary uppercase tracking-widest mb-1.5 ml-1">Téléphone</label>
+                      <label className="block text-[10px] font-bold text-primary uppercase tracking-widest mb-1.5 ml-1 font-poppins">Téléphone</label>
                       <input 
                         type="tel" 
                         required
                         value={formData.phone}
                         onChange={(e) => setFormData({...formData, phone: e.target.value})}
-                        className="w-full px-4 py-3 rounded-xl border border-slate-100 bg-slate-50 focus:bg-white focus:ring-2 focus:ring-secondary/20 focus:border-secondary transition-all outline-none"
+                        className="w-full px-4 py-3 rounded-xl border border-slate-100 bg-slate-50 focus:bg-white focus:ring-2 focus:ring-accent/20 focus:border-accent transition-all outline-none"
                         placeholder="06 12 34 56 78"
                       />
                     </div>
-
+ 
                     <div>
-                      <label className="block text-[10px] font-black text-primary uppercase tracking-widest mb-1.5 ml-1">Message / Motivations</label>
+                      <label className="block text-[10px] font-bold text-primary uppercase tracking-widest mb-1.5 ml-1 font-poppins">Message / Motivations</label>
                       <textarea 
                         rows={3}
                         value={formData.message}
                         onChange={(e) => setFormData({...formData, message: e.target.value})}
-                        className="w-full px-4 py-3 rounded-xl border border-slate-100 bg-slate-50 focus:bg-white focus:ring-2 focus:ring-secondary/20 focus:border-secondary transition-all outline-none resize-none"
+                        className="w-full px-4 py-3 rounded-xl border border-slate-100 bg-slate-50 focus:bg-white focus:ring-2 focus:ring-accent/20 focus:border-accent transition-all outline-none resize-none"
                         placeholder="Pourquoi souhaitez-vous nous rejoindre ?"
                       />
                     </div>
@@ -403,7 +403,7 @@ const Team = () => {
                     <button 
                       type="submit"
                       disabled={submitStatus === 'loading'}
-                      className="w-full bg-primary text-white py-4 rounded-xl font-black uppercase tracking-widest shadow-lg hover:bg-secondary transition-all flex items-center justify-center gap-3 disabled:bg-slate-200"
+                      className="w-full bg-primary text-white py-4 rounded-xl font-bold uppercase tracking-widest shadow-lg hover:bg-accent transition-all flex items-center justify-center gap-3 disabled:bg-slate-200 font-poppins"
                     >
                       {submitStatus === 'loading' ? (
                         <Loader2 className="w-5 h-5 animate-spin" />

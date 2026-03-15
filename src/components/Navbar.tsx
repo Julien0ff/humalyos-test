@@ -28,7 +28,7 @@ const Navbar = () => {
               <img src={logo} alt="Humalyos Logo" className="h-14 w-14 mr-3 transition-transform group-hover:scale-110" />
               <div className="flex flex-col">
                 <span className="text-2xl font-black text-primary leading-none tracking-tighter">HUMALYOS</span>
-                <span className="text-[10px] font-bold text-secondary tracking-[0.2em] uppercase">Antenne Nationale</span>
+                <span className="text-[10px] font-medium text-accent tracking-[0.2em] uppercase font-poppins">Antenne Nationale</span>
               </div>
             </Link>
           </div>
@@ -41,8 +41,8 @@ const Navbar = () => {
                 to={link.path}
                 className={`px-4 py-2 rounded-md text-sm font-bold uppercase tracking-wider transition-all ${
                   isActive(link.path) 
-                  ? 'text-secondary bg-slate-50' 
-                  : 'text-primary hover:bg-slate-50 hover:text-secondary'
+                  ? 'text-accent bg-slate-50' 
+                  : 'text-primary hover:bg-slate-50 hover:text-accent'
                 }`}
               >
                 {link.name}
@@ -51,10 +51,10 @@ const Navbar = () => {
             <div className="h-8 w-[2px] bg-slate-200 mx-4"></div>
             <Link
               to="/portal"
-              className={`flex items-center px-6 py-2.5 rounded-full text-sm font-black uppercase transition-all shadow-lg hover:shadow-secondary/20 ${
+              className={`flex items-center px-6 py-2.5 rounded-full text-sm font-black uppercase transition-all shadow-lg hover:shadow-primary/20 ${
                 isActive('/portal')
-                ? 'bg-primary text-white'
-                : 'bg-secondary text-white hover:bg-primary'
+                ? 'bg-accent text-white'
+                : 'bg-primary text-white hover:bg-accent'
               }`}
             >
               <LogIn className="w-4 h-4 mr-2" />
@@ -83,8 +83,8 @@ const Navbar = () => {
                 to={link.path}
                 className={`block px-3 py-3 rounded-md text-base font-bold uppercase ${
                   isActive(link.path)
-                  ? 'text-secondary bg-slate-50'
-                  : 'text-primary hover:bg-slate-50 hover:text-secondary'
+                  ? 'text-accent bg-slate-50'
+                  : 'text-primary hover:bg-slate-50 hover:text-accent'
                 }`}
                 onClick={() => setIsOpen(false)}
               >
@@ -95,8 +95,8 @@ const Navbar = () => {
               to="/login"
               className={`flex items-center m-2 px-4 py-3 rounded-md text-base font-black uppercase ${
                 isActive('/login')
-                ? 'bg-primary text-white'
-                : 'bg-secondary text-white'
+                ? 'bg-accent text-white'
+                : 'bg-primary text-white'
               }`}
               onClick={() => setIsOpen(false)}
             >
