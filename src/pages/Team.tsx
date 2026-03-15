@@ -2,6 +2,16 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Mail, Linkedin, ExternalLink, UserPlus, X, Send, Loader2, CheckCircle2 } from 'lucide-react';
 import { useState } from 'react';
 import { eBrigadeApi } from '../services/ebrigade';
+import pierrickImg from '../assets/Pierrick.jpg';
+import sachaImg from '../assets/Sacha.jpg';
+import wahidImg from '../assets/Wahid.jpg';
+import romainImg from '../assets/Romain.jpg';
+import kilianImg from '../assets/Kilian.jpg';
+import julienImg from '../assets/Julien.jpg';
+import gabinImg from '../assets/Gabin.jpg';
+import chrisImg from '../assets/Chris.jpg';
+import jeanImg from '../assets/Jean.jpg';
+import dylanImg from '../assets/Dylan.jpg';
 
 const Team = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -60,21 +70,21 @@ const Team = () => {
           role: "Président de l'antenne Nationale",
           email: "pierrick.cornuat@humalyos.fr",
           linkedin: "https://www.linkedin.com/in/pierrick-cornuat-43081131a/",
-          image: "/assets/Pierrick.jpg",
+          image: pierrickImg,
           bio: "Direction stratégique et représentation de l'antenne nationale."
         },
         {
           name: "Sacha Majcherczak",
           role: "Vice Président, Coordinateur unité psychologique & Responsable Zone NORD",
           email: "sacha.majcherczak@humalyos.fr",
-          image: "/assets/Sacha.jpg",
+          image: sachaImg,
           bio: "Expertise psychologique et coordination de la zone Nord."
         },
         {
           name: "Wahid Habbar",
           role: "Vice président, Responsable régional Normandie",
           email: "wahid.habbar@humalyos.fr",
-          image: "/assets/Wahid.jpg",
+          image: wahidImg,
           bio: "Développement et coordination de la région Normandie."
         }
       ]
@@ -87,14 +97,14 @@ const Team = () => {
           role: "Secrétaire général, Assistant/conseiller juridique, Responsable Zone EST & Responsable groupes de paroles",
           email: "romain.rodriguez@humalyos.fr",
           linkedin: "https://www.linkedin.com/in/romain-rodriguez-102015380/",
-          image: "/assets/Romain.jpg",
+          image: romainImg,
           bio: "Gestion administrative et coordination des groupes de parole."
         },
         {
           name: "Kilian Didelet",
           role: "Trésorier, Responsable départemental de la Loire",
           email: "kilian.didelet@humalyos.fr",
-          image: "/assets/Kilian.jpg",
+          image: kilianImg,
           bio: "Gestion financière et déploiement dans la Loire."
         }
       ]
@@ -106,14 +116,14 @@ const Team = () => {
           name: "Julien Vrignaud",
           role: "Responsable Unité Harcèlement & Préventions, Responsable Grand Est",
           email: "julien.vrignaud@solreca-group.fr",
-          image: "/assets/Julien.jpg",
+          image: julienImg,
           bio: "Lutte contre le harcèlement et prévention en région Grand Est."
         },
         {
           name: "Gabin Hugerot",
           role: "Responsable Unité Harcèlement & Préventions",
           email: "gabin.hugerot@humalyos.fr",
-          image: "/assets/Gabin.jpg",
+          image: gabinImg,
           bio: "Expertise en dispositifs de prévention du harcèlement."
         },
         {
@@ -121,13 +131,13 @@ const Team = () => {
           role: "Responsable Unité Cyber, Responsable Zone SUD & PACA",
           email: "christophe.plane@humalyos.fr",
           linkedin: "https://www.linkedin.com/in/christophe-plane-a571942a4/",
-          image: "/assets/Chris.jpg",
+          image: chrisImg,
           bio: "Protection numérique et coordination de la zone Sud."
         },
         {
           name: "Jean Alain Adli",
           role: "Responsable ECHO (Evacuation, Coordination, Hébergement, Organisation), Dept Haut Rhin",
-          image: "/assets/Jean.jpg",
+          image: jeanImg,
           bio: "Coordination des secours d'urgence et hébergement."
         }
       ]
@@ -139,7 +149,7 @@ const Team = () => {
           name: "Dylan Plaire Hatie",
           role: "Responsable de la zone EST",
           email: "dylan.plaire-hatie@humalyos.fr",
-          image: "/assets/Dylan.jpg",
+          image: dylanImg,
           bio: "Coordination opérationnelle de la zone Est."
         }
       ]

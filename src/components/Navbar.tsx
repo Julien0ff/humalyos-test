@@ -1,6 +1,7 @@
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, LogIn } from 'lucide-react';
 import { useState } from 'react';
+import logo from '../assets/logo.png';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -24,7 +25,7 @@ const Navbar = () => {
         <div className="flex justify-between h-20">
           <div className="flex items-center">
             <Link to="/" className="flex-shrink-0 flex items-center group">
-              <img src="/assets/logo.png" alt="Humalyos Logo" className="h-14 w-14 mr-3 transition-transform group-hover:scale-110" />
+              <img src={logo} alt="Humalyos Logo" className="h-14 w-14 mr-3 transition-transform group-hover:scale-110" />
               <div className="flex flex-col">
                 <span className="text-2xl font-black text-primary leading-none tracking-tighter">HUMALYOS</span>
                 <span className="text-[10px] font-bold text-secondary tracking-[0.2em] uppercase">Antenne Nationale</span>

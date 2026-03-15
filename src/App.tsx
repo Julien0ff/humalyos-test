@@ -13,7 +13,17 @@ import Join from './pages/Join';
 import Legal from './pages/Legal';
 import Privacy from './pages/Privacy';
 
+import { useEffect } from 'react';
+import logo from './assets/logo.png';
+
 function App() {
+  useEffect(() => {
+    const link = document.querySelector("link[rel~='icon']") as HTMLLinkElement;
+    if (link) {
+      link.href = logo;
+    }
+  }, []);
+
   return (
     <Router>
       <ScrollToTop />

@@ -1,6 +1,7 @@
 import { ArrowRight, Shield, Heart, Cpu, Zap, Users } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import secourisme from '../assets/secourisme.png';
 
 const Home = () => {
   const stats = [
@@ -39,7 +40,7 @@ const Home = () => {
         <div className="absolute right-0 top-0 w-1/2 h-full hidden lg:block">
           <div className="absolute inset-0 bg-gradient-to-l from-primary via-transparent to-primary z-10"></div>
           <img 
-            src="/assets/secourisme.png" 
+            src={secourisme} 
             alt="Secourisme" 
             className="w-full h-full object-cover"
           />
