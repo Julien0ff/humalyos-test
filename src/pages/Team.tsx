@@ -12,7 +12,7 @@ import gabinImg from '../assets/Gabin.jpg';
 import chrisImg from '../assets/Chris.jpg';
 import jeanImg from '../assets/Jean.jpg';
 import dylanImg from '../assets/Dylan.jpg';
-import lenaImg from '../assets/Lena.jpg'; // Ajoutez votre fichier Lena.jpg dans le dossier src/assets/
+import lenaImg from '../assets/Lena.png'; // Ajoutez votre fichier Lena.jpg dans le dossier src/assets/
 
 const Team = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -29,7 +29,7 @@ const Team = () => {
   const handleJoinSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setSubmitStatus('loading');
-    
+
     try {
       // Préparation des données pour eBrigade selon le format attendu
       // P_CODE est requis par l'API selon le feedback utilisateur
@@ -205,7 +205,7 @@ const Team = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {section.members.map((member, index) => (
-                <motion.div 
+                <motion.div
                   key={index}
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
@@ -214,9 +214,9 @@ const Team = () => {
                   className="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-100 flex flex-col"
                 >
                   <div className="h-64 overflow-hidden relative bg-slate-100">
-                    <img 
-                      src={member.image} 
-                      alt={member.name} 
+                    <img
+                      src={member.image}
+                      alt={member.name}
                       className="w-full h-full object-cover transition-all duration-700 group-hover:scale-105"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-primary/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-6">
@@ -268,7 +268,7 @@ const Team = () => {
           >
             <h2 className="text-4xl font-bold text-primary uppercase tracking-tighter mb-4 font-poppins">Bureau Exécutif</h2>
             <p className="text-lg text-slate-500 font-medium mb-12">Rejoignez notre équipe dirigeante. Postes à promouvoir :</p>
-            
+
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
               {recruitmentPositions.map((position, index) => (
                 <a href="/rejoindre" key={index} className="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 hover:border-accent transition-colors group block">
@@ -282,9 +282,9 @@ const Team = () => {
                 </a>
               ))}
             </div>
-            
+
             <div className="mt-16">
-              <a 
+              <a
                 href="/rejoindre"
                 className="inline-flex items-center bg-primary text-white px-10 py-4 rounded-full font-bold uppercase tracking-widest hover:bg-accent transition-all shadow-xl hover:shadow-accent/20 font-poppins"
               >
@@ -313,14 +313,14 @@ const Team = () => {
               className="relative bg-white rounded-3xl shadow-2xl w-full max-w-xl overflow-hidden"
             >
               <div className="absolute top-0 left-0 w-full h-1.5 bg-accent"></div>
-              
+
               <div className="p-8 md:p-12">
                 <div className="flex justify-between items-start mb-8">
                   <div>
                     <h2 className="text-3xl font-bold text-primary uppercase tracking-tighter font-poppins">Devenir membre</h2>
                     <p className="text-slate-500 font-medium mt-1">Rejoignez l'Antenne Nationale Humalyos</p>
                   </div>
-                  <button 
+                  <button
                     onClick={() => setIsModalOpen(false)}
                     className="p-2 hover:bg-slate-100 rounded-full transition-colors"
                   >
@@ -329,7 +329,7 @@ const Team = () => {
                 </div>
 
                 {submitStatus === 'success' ? (
-                  <motion.div 
+                  <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     className="py-12 text-center"
@@ -345,58 +345,58 @@ const Team = () => {
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                       <div>
                         <label className="block text-[10px] font-black text-primary uppercase tracking-widest mb-1.5 ml-1">Prénom</label>
-                        <input 
-                          type="text" 
+                        <input
+                          type="text"
                           required
                           value={formData.firstName}
-                          onChange={(e) => setFormData({...formData, firstName: e.target.value})}
+                          onChange={(e) => setFormData({ ...formData, firstName: e.target.value })}
                           className="w-full px-4 py-3 rounded-xl border border-slate-100 bg-slate-50 focus:bg-white focus:ring-2 focus:ring-accent/20 focus:border-accent transition-all outline-none"
                           placeholder="Jean"
                         />
                       </div>
                       <div>
                         <label className="block text-[10px] font-bold text-primary uppercase tracking-widest mb-1.5 ml-1 font-poppins">Nom</label>
-                        <input 
-                          type="text" 
+                        <input
+                          type="text"
                           required
                           value={formData.lastName}
-                          onChange={(e) => setFormData({...formData, lastName: e.target.value})}
+                          onChange={(e) => setFormData({ ...formData, lastName: e.target.value })}
                           className="w-full px-4 py-3 rounded-xl border border-slate-100 bg-slate-50 focus:bg-white focus:ring-2 focus:ring-accent/20 focus:border-accent transition-all outline-none"
                           placeholder="Dupont"
                         />
                       </div>
                     </div>
- 
+
                     <div>
                       <label className="block text-[10px] font-bold text-primary uppercase tracking-widest mb-1.5 ml-1 font-poppins">Email</label>
-                      <input 
-                        type="email" 
+                      <input
+                        type="email"
                         required
                         value={formData.email}
-                        onChange={(e) => setFormData({...formData, email: e.target.value})}
+                        onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                         className="w-full px-4 py-3 rounded-xl border border-slate-100 bg-slate-50 focus:bg-white focus:ring-2 focus:ring-accent/20 focus:border-accent transition-all outline-none"
                         placeholder="jean.dupont@exemple.com"
                       />
                     </div>
- 
+
                     <div>
                       <label className="block text-[10px] font-bold text-primary uppercase tracking-widest mb-1.5 ml-1 font-poppins">Téléphone</label>
-                      <input 
-                        type="tel" 
+                      <input
+                        type="tel"
                         required
                         value={formData.phone}
-                        onChange={(e) => setFormData({...formData, phone: e.target.value})}
+                        onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                         className="w-full px-4 py-3 rounded-xl border border-slate-100 bg-slate-50 focus:bg-white focus:ring-2 focus:ring-accent/20 focus:border-accent transition-all outline-none"
                         placeholder="06 12 34 56 78"
                       />
                     </div>
- 
+
                     <div>
                       <label className="block text-[10px] font-bold text-primary uppercase tracking-widest mb-1.5 ml-1 font-poppins">Message / Motivations</label>
-                      <textarea 
+                      <textarea
                         rows={3}
                         value={formData.message}
-                        onChange={(e) => setFormData({...formData, message: e.target.value})}
+                        onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                         className="w-full px-4 py-3 rounded-xl border border-slate-100 bg-slate-50 focus:bg-white focus:ring-2 focus:ring-accent/20 focus:border-accent transition-all outline-none resize-none"
                         placeholder="Pourquoi souhaitez-vous nous rejoindre ?"
                       />
@@ -408,7 +408,7 @@ const Team = () => {
                       </div>
                     )}
 
-                    <button 
+                    <button
                       type="submit"
                       disabled={submitStatus === 'loading'}
                       className="w-full bg-primary text-white py-4 rounded-xl font-bold uppercase tracking-widest shadow-lg hover:bg-accent transition-all flex items-center justify-center gap-3 disabled:bg-slate-200 font-poppins"
