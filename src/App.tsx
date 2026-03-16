@@ -12,6 +12,8 @@ import PortalComingSoon from './pages/PortalComingSoon';
 import Join from './pages/Join';
 import Legal from './pages/Legal';
 import Privacy from './pages/Privacy';
+import News from './pages/News';
+import AdminNews from './pages/AdminNews';
 
 function App() {
   return (
@@ -29,6 +31,8 @@ function App() {
             <Route path="/login" element={<Login />} />
             <Route path="/portal" element={<PortalComingSoon />} />
             <Route path="/rejoindre" element={<Join />} />
+            <Route path="/actus" element={<News />} />
+            <Route path="/admin-actus" element={<AdminNews />} />
             <Route path="/mentions-legales" element={<Legal />} />
             <Route path="/confidentialite" element={<Privacy />} />
           </Routes>

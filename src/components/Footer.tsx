@@ -33,6 +33,7 @@ const Footer = () => {
             <h3 className="text-sm font-bold text-accent mb-8 uppercase tracking-[0.2em] font-poppins">Navigation</h3>
             <ul className="space-y-4">
               <li><Link to="/" className="text-slate-300 hover:text-white font-bold transition-colors uppercase text-sm">Accueil</Link></li>
+              <li><Link to="/actus" className="text-slate-300 hover:text-white font-bold transition-colors uppercase text-sm">Actualités</Link></li>
               <li><Link to="/missions" className="text-slate-300 hover:text-white font-bold transition-colors uppercase text-sm">Missions</Link></li>
               <li><Link to="/histoire" className="text-slate-300 hover:text-white font-bold transition-colors uppercase text-sm">Notre Histoire</Link></li>
               <li><Link to="/equipe" className="text-slate-300 hover:text-white font-bold transition-colors uppercase text-sm">L'Équipe</Link></li>
