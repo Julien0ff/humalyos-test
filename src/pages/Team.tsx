@@ -12,6 +12,7 @@ import gabinImg from '../assets/Gabin.jpg';
 import chrisImg from '../assets/Chris.jpg';
 import jeanImg from '../assets/Jean.jpg';
 import dylanImg from '../assets/Dylan.jpg';
+import lenaImg from '../assets/Lena.jpg'; // Ajoutez votre fichier Lena.jpg dans le dossier src/assets/
 
 const Team = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -139,6 +140,13 @@ const Team = () => {
           role: "Responsable ECHO (Evacuation, Coordination, Hébergement, Organisation), Dept Haut Rhin",
           image: jeanImg,
           bio: "Coordination des secours d'urgence et hébergement."
+        },
+        {
+          name: "Léna Riccardi",
+          role: "Responsable de l'unité psychologique",
+          email: "lena.riccardi@humalyos.fr",
+          image: lenaImg,
+          bio: "Soutien et coordination de l'unité d'accompagnement psychologique."
         }
       ]
     },
