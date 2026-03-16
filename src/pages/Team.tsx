@@ -138,6 +138,7 @@ const Team = () => {
         {
           name: "Jean Alain Adli",
           role: "Responsable ECHO (Evacuation, Coordination, Hébergement, Organisation), Dept Haut Rhin",
+          email: "jeanadli3@gmail.com",
           image: jeanImg,
           bio: "Coordination des secours d'urgence et hébergement."
         },
